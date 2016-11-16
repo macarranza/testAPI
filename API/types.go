@@ -15,6 +15,18 @@ type Genre struct {
 	Name string `json:"name"`
 }
 
+type GenreExtra struct {
+	Id int `json:"ID"`
+	Name string `json:"name"`
+	NumberOfSongs int `json:"numberOfSongs"`
+	TotalLength int `json:"totalLength"`
+}
+
+type Context struct {
+	MessageTitle string 
+	Message string
+}
+
 type Route struct {
     Name        string
     Method      string
@@ -56,10 +68,22 @@ var routes = Routes{
         getSongByGenre,
     },
 	Route{
+        "SongByLength",
+        "GET",
+        "/songs/length/{minLength}/{maxLength}",
+        getSongsByLength,
+    },
+	Route{
         "AllGenres",
         "GET",
         "/genres",
         getAllGenres,
+    },
+	Route{
+        "AllGenresExtra",
+        "GET",
+        "/genresExtra",
+        getAllGenresExtra,
     },
 	Route{
         "GenreByName",
