@@ -1,0 +1,13 @@
+package: github.com/macarranza/API
+homepage: https://github.com/macarranza/API
+owner:
+- name: Marvin Carranza Romero
+  email: marvingcr@gmail.com
+import:
+- package: golang.org/x/net/context
+- package: gorilla/mux
+  repo:    git@github.com/gorilla/mux
+  vcs:     git
+- package: mattn/go-sqlite3
+  repo:	   git@github.com/mattn/go-sqlite3
+  vcs: 	   git
