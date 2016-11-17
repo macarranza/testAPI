@@ -5,8 +5,9 @@ import (
     "net/http"
 )
 
+/* Main function */
 func main() {
-    router := NewRouter()
-    log.Fatal(http.ListenAndServe(":8080", router))
+    router := NewRouter() /* Create a router/handler for all defined routes */
+    log.Fatal(http.ListenAndServe(":8080", router)) /* Starts the server listening to localhost:8080 */
 }
 
