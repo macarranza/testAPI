@@ -1,8 +1,8 @@
 # testAPI
 
 Installation:
-- Move the API folder to your GOPATH folder (your GO workspace) 
-- Execute: go install /yourGOPATH/API
+- Move the API folder to your GOPATH folder (your GO workspace). Must be on yourGOPATH/src/github.com/macarranza/API
+- Execute: go install github.com/macarranza/API
 - Execute the API.exe file created in the bin folder in your GOPATH folder 
 
 Usage: After executing the API:
